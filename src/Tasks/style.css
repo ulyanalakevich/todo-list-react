@@ -1,0 +1,59 @@
+.list__taskDone {
+    text-decoration: line-through;
+}
+
+.list__task {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    grid-gap: 20px;
+}
+
+.list__task--hidden {
+    display: none;
+}
+
+.button {
+    color: white;
+    width: 35px;
+    height: 35px;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button--done {
+    background-color: green;
+}
+
+.button--done:hover {
+    background-color: hsl(120, 100%, 30%);
+    transform: scale(1.02);
+}
+
+.button--done:active {
+    background-color: hsl(120, 100%, 35%);
+}
+
+.button--remove {
+    background-color: red;
+}
+
+.button--remove:hover {
+background-color: hsl(0, 100%, 58%);
+transform: scale(1.02);
+}
+
+.button--remove:active {
+    background-color: hsl(0, 100%, 63%);
+    }
+    
+
+.list {
+    margin: 0;
+    padding: 10px;
+    font-weight: 400px;
+}
+
