@@ -4,7 +4,7 @@
 
 ## Demo
 
-https://ulyanalakevich.github.io/Tasks-list/
+https://ulyanalakevich.github.io/todo-list-react/
 ## Description
 This website is a tasks list. You can write there what you have to do and when you are done, delete this task or mark it is done. This website will help you for making to do lists but also for making for example shopping lists.
 
