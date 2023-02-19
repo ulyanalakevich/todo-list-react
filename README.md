@@ -14,7 +14,7 @@ First you need to write task, and tap at the button or tap enter. Then you will 
 
 ## Used technologies
 
-HTML, CSS, JS, BEM convention, React, Babel, Webpack
+HTML, CSS, JavaScript, BEM convention, ES6+ features, Normalize, GIT, React, Babel, Webpack
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
