@@ -11,24 +11,25 @@
         grid-template-columns: 1fr;
     }
 }
+
 .form__item {
-border: 1px solid #ddd;
-padding: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
 }
 
 .form__item--button {
-   background-color: teal;
-   color: white;
-   height: 40px;
-   transition: 0.5s;
-   cursor: pointer;
+    background-color: teal;
+    color: white;
+    height: 40px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
-.form__item--button:hover{
+.form__item--button:hover {
     background-color: hsl(180, 100%, 35%);
     transform: scale(1.07);
 }
 
-.form__item--button:active{
+.form__item--button:active {
     background-color: hsl(180, 100%, 45%);
 }

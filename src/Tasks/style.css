@@ -42,18 +42,17 @@
 }
 
 .button--remove:hover {
-background-color: hsl(0, 100%, 58%);
-transform: scale(1.02);
+    background-color: hsl(0, 100%, 58%);
+    transform: scale(1.02);
 }
 
 .button--remove:active {
     background-color: hsl(0, 100%, 63%);
-    }
-    
+}
+
 
 .list {
     margin: 0;
     padding: 10px;
     font-weight: 400px;
 }
-

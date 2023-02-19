@@ -12,14 +12,15 @@
     cursor: pointer;
 }
 
-@media (max-width: 767px){
-.buttons__button {
-    flex-basis: 100%;
-    margin: 0px;
-    justify-content: center;
-    padding-bottom: 20px;
+@media (max-width: 767px) {
+    .buttons__button {
+        flex-basis: 100%;
+        margin: 0px;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
 }
-}
+
 .buttons__button:disabled {
     color: #ccc;
 }
