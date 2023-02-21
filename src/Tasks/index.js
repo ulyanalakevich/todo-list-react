@@ -5,13 +5,13 @@ import "./style.css";
 const deleteTask = (name) => {
    console.log(`Nazwa zadania do usunięcia: ${name}`);
 }
-const Tasks = ({tasks, hideDone}) => {
+const Tasks = ({tasks, hideDone, removeTask}) => {
    return (
       <ul className="list">
          {tasks.map(task => (
             <li 
             key={task.id} 
-            className={`list__task${task.done && hideDone ? "list__task--hidden" : ""}`}
+            className={`list__task ${task.done && hideDone ? "list__task--hidden" : ""}`}
             >
             <button className="button button--done">
              {task.done ? "✓" : ""} 
@@ -20,7 +20,8 @@ const Tasks = ({tasks, hideDone}) => {
              {task.content}
              </span>
              <button 
-             className="button button--remove" onClick={() => deleteTask(task.content)}> 
+             className="button button--remove" 
+             onClick={() => removeTask(task.id)}> 
              🗑
              </button>
             </li>
