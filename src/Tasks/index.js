@@ -1,10 +1,6 @@
 import React from 'react';
 import "./style.css";
 
-
-const deleteTask = (name) => {
-   console.log(`Nazwa zadania do usunięcia: ${name}`);
-}
 const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => {
    return (
       <ul className="list">
@@ -19,7 +15,7 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => {
                   {task.done ? "✓" : ""}
                </button>
                <span className={`${task.done ? "list__taskDone" : ""}`}>
-                  {task.content}
+                  {task.content} - {task.id}
                </span>
                <button
                   className="button button--remove"
