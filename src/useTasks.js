@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 export const useTasks = () => {
+    const tasksLocalStorage = localStorage.getItem("tasks");
     const [tasks, setTasks] = useState(
         tasksLocalStorage
             ? JSON.parse(tasksLocalStorage)
@@ -10,8 +11,6 @@ export const useTasks = () => {
                 { id: 2, content: "zjeść kolację", done: true }
             ]
     );
-
-    const tasksLocalStorage = localStorage.getItem("tasks");
 
     useEffect(() => {
         localStorage.setItem("tasks", JSON.stringify(tasks));
@@ -34,7 +33,7 @@ export const useTasks = () => {
     };
 
     const addNewTask = (content) => {
-        setTasks(task => [
+        setTasks(tasks => [
             ...tasks,
             {
                 content,
@@ -44,15 +43,13 @@ export const useTasks = () => {
         ]);
     };
 
-    return (
-        {
+    return {
             tasks,
             removeTask,
             toggleTaskDone,
             setAllDone,
             setAllDone,
             addNewTask
-        }
-    )
+        };
 };
 

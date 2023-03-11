@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
@@ -20,7 +20,6 @@ function App() {
     toggleTaskDone,
     setAllDone,
     addNewTask,
-    tasksLocalStorage,
   } = useTasks();
 
 
