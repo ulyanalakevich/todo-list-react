@@ -5,7 +5,7 @@ export const Content = styled.div `
     flex-wrap: wrap;
 `;
 
-export const ToggleButton = styled.button `
+export const Button = styled.button `
     background-color: transparent;
     color: teal;
     border: none;
