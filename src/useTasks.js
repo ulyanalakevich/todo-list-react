@@ -1,15 +1,14 @@
 import { useState, useEffect } from "react";
 
+const DEFAULT_TASKS = [ 
+    { id: 1, content: "przejść na Reacta", done: false },
+    { id: 2, content: "zjeść kolację", done: true }
+];
+
 export const useTasks = () => {
     const tasksLocalStorage = localStorage.getItem("tasks");
     const [tasks, setTasks] = useState(
-        tasksLocalStorage
-            ? JSON.parse(tasksLocalStorage)
-            :
-            [
-                { id: 1, content: "przejść na Reacta", done: false },
-                { id: 2, content: "zjeść kolację", done: true }
-            ]
+    JSON.parse(tasksLocalStorage) || DEFAULT_TASKS
     );
 
     useEffect(() => {
