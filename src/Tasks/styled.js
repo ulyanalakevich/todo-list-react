@@ -36,14 +36,14 @@ export const Button = styled.button`
     ${({ toggleDone }) => toggleDone && css`
     background-color: green;
 
-    &:hover {
+        &:hover {
         background-color: hsl(120, 100%, 30%);
         transform: scale(1.02);
-    }
+        }
 
-    &:active {
+        &:active {
         background-color: hsl(120, 100%, 35%);
-    }
+        }
     `}
 
     ${({ remove }) => remove && css`

@@ -15,9 +15,9 @@ export const List = styled.div`
   padding: 0 10px 0 0;
 
   
-@media (max-width: 767px) {
+  @media (max-width: 767px) {
     grid-template-columns: 1fr;
-  }
+    }
 `;
 
 export const Header = styled.h2`
