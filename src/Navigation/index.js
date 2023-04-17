@@ -1,6 +1,7 @@
 import { ListItem, Nav, StyledNavLink } from "./styled"
 
 export const Navigation = () => {
+    return (
     <Nav>
         <ListItem>
             <StyledNavLink to="/zadania">
@@ -13,4 +14,4 @@ export const Navigation = () => {
             </StyledNavLink>
         </ListItem>
     </Nav>
-};
+)};

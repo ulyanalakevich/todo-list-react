@@ -16,6 +16,13 @@ justify-content: center;
 export const ListItem = styled.li`
 padding: 20px;
 list-style: none;
+transition: 0.5s;
+cursor: pointer;
+
+&:hover {
+        transform: scale(1.02);
+        font-weight: 700;
+        }
 `
 
 export const StyledNavLink = styled(NavLink)`
