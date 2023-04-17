@@ -2,7 +2,7 @@ import { List, Item, Content, Button, StyledLink } from "./styled"
 import { useSelector, useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 import { selectHideDone, toggleTaskDone, removeTask, selectTasksByQuery } from "../../tasksSlice";
-import searchQueryParamName from "../searchQueryParamName";
+import searchQueryParamName from "../queryParameters/searchQueryParamName";
 
 
 const TaskList = () => {
