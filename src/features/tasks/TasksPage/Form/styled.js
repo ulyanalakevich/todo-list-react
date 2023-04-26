@@ -21,12 +21,12 @@ export const Button = styled.button`
     transition: 0.5s;
     cursor: pointer;
 
-    &:hover {
-    background-color: hsl(180, 100%, 35%);
-    transform: scale(1.07);
+      &:hover {
+      background-color: hsl(180, 100%, 35%);
+      transform: scale(1.07);
     }
 
-    &:active {
-    background-color: hsl(180, 100%, 45%);
+      &:active {
+      background-color: hsl(180, 100%, 45%);
     }
 `;

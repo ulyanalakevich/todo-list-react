@@ -17,6 +17,7 @@ const Form = () => {
         const trimmedNewTaskContent = newTaskContent.trim();
 
         if (!trimmedNewTaskContent) {
+            
             return;
         }
 
@@ -29,6 +30,7 @@ const Form = () => {
         setNewTaskContent("");
         inputRef.current.focus();
     }
+    
     return (
         <Content onSubmit={onFormSubmit}>
             <Input ref={inputRef}

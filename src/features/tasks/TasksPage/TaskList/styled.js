@@ -8,21 +8,21 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
- display: grid;
- grid-template-columns: auto 1fr auto;
- align-items: center;
- padding: 10px;
- border-bottom: 1px solid #ddd;
- grid-gap: 20px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  grid-gap: 20px;
 
- ${({ hidden }) => hidden && css`
- display: none;
+  ${({ hidden }) => hidden && css`
+  display: none;
  `}
 `;
 
 export const Content = styled.span`
-${({ done }) => done && css`
-text-decoration: line-through;
+  ${({ done }) => done && css`
+  text-decoration: line-through;
     `}
 `
 
@@ -62,9 +62,10 @@ export const Button = styled.button`
 `
 
 export const StyledLink = styled(Link)`
-text-decoration: none;
-color: teal;
-&:hover {
+  text-decoration: none;
+  color: teal;
+  
+  &:hover {
         color: hsl(180, 100%, 35%);
     }
 `
