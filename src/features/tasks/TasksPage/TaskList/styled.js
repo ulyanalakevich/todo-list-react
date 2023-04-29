@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components"
+import styled, { css } from "styled-components";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 export const List = styled.ul`
@@ -15,57 +15,65 @@ export const Item = styled.li`
   border-bottom: 1px solid #ddd;
   grid-gap: 20px;
 
-  ${({ hidden }) => hidden && css`
-  display: none;
- `}
+  ${({ hidden }) =>
+    hidden &&
+    css`
+      display: none;
+    `}
 `;
 
 export const Content = styled.span`
-  ${({ done }) => done && css`
-  text-decoration: line-through;
+  ${({ done }) =>
+    done &&
+    css`
+      text-decoration: line-through;
     `}
-`
+`;
 
 export const Button = styled.button`
-    color: white;
-    width: 35px;
-    height: 35px;
-    border: none;
-    transition: 0.5s;
-    cursor: pointer;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
 
-    ${({ toggleDone }) => toggleDone && css`
-    background-color: green;
+  ${({ toggleDone }) =>
+    toggleDone &&
+    css`
+      background-color: green;
 
-        &:hover {
+      &:hover {
         background-color: hsl(120, 100%, 30%);
         transform: scale(1.02);
-        }
+      }
 
-        &:active {
+      &:active {
         background-color: hsl(120, 100%, 35%);
-        }
+      }
     `}
 
-    ${({ remove }) => remove && css`
-       background-color: red;
+  ${({ remove }) =>
+    remove &&
+    css`
+      background-color: red;
 
-       &:hover {
+      &:hover {
         background-color: hsl(0, 100%, 58%);
         transform: scale(1.02);
-       }
+      }
 
-       &:active {
+      &:active {
         background-color: hsl(0, 100%, 63%);
-       }
+      }
     `}
-`
+`;
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
   color: teal;
-  
+
   &:hover {
-        color: hsl(180, 100%, 35%);
-    }
-`
+    color: hsl(180, 100%, 35%);
+  }
+`;

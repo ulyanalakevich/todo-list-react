@@ -1,4 +1,4 @@
-import { Content, List, Header, Tasks } from './styled';
+import { Content, List, Header, Tasks } from "./styled";
 
 const Section = ({ title, body, extraHeaderContent }) => (
   <Content>
@@ -6,9 +6,7 @@ const Section = ({ title, body, extraHeaderContent }) => (
       <Header>{title}</Header>
       {extraHeaderContent}
     </List>
-    <Tasks>
-      {body}
-    </Tasks>
+    <Tasks>{body}</Tasks>
   </Content>
 );
 

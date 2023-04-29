@@ -5,9 +5,7 @@ import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import { Navigation } from "../src/common/Navigation";
 import { toAuthor, toTask, toTasks } from "./routes";
 
-
-export default () =>
-(
+export default () => (
   <HashRouter>
     <Navigation />
     <Switch>

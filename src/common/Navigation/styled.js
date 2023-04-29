@@ -16,18 +16,18 @@ export const ListItem = styled.li`
   cursor: pointer;
 
   &:hover {
-        transform: scale(1.02);
-        font-weight: 700;
-        }
-`
+    transform: scale(1.02);
+    font-weight: 700;
+  }
+`;
 
 export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   color: white;
   list-style: none;
 
-  &.active{
+  &.active {
     color: white;
     font-weight: 700;
-}
+  }
 `;

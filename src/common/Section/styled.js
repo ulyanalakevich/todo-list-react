@@ -14,10 +14,9 @@ export const List = styled.div`
   align-items: center;
   padding: 0 10px 0 0;
 
-  
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
-    }
+  }
 `;
 
 export const Header = styled.h2`
