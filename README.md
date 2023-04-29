@@ -1,12 +1,12 @@
 # Tasks list
 
-![video](public/Animation.gif)
+![video](public/Animation1.gif)
 
 ## Demo
 
 https://ulyanalakevich.github.io/todo-list-react/
 ## Description
-This website is a tasks list. You can write there what you have to do and when you are done, delete this task or mark it is done. This website will help you for making to do lists but also for making for example shopping lists.
+This website is a tasks list. You can write there what you have to do and when you are done, delete this task or mark it is done. This website will help you for making to do lists but also for making for example shopping lists. You can also get example tasks and filter tasks by search engine.
 
 ## Instructions
 First you need to write task, and tap at the button or tap enter. Then you will see this task in your list. If you already have done your task, you can tap at the green square by left side to mark it with a tick and cross it out. If you want to  delete this task, you need to tap at the red square button by right side.
@@ -14,7 +14,7 @@ First you need to write task, and tap at the button or tap enter. Then you will 
 
 ## Used technologies
 
-HTML, CSS, JavaScript, BEM convention, ES6+ features, Normalize, GIT, React, Babel, Webpack, Media queries, Immutability, Local storage, Styled Components, Custom Hooks, Redux
+HTML, CSS, JavaScript, BEM convention, ES6+ features, Normalize, GIT, React, Babel, Webpack, Media queries, Immutability, Local storage, Styled Components, Custom Hooks, Redux Toolkit, Redux Saga, Redux Router
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
